@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>สงสัยอะะะะะ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg-layer" aria-hidden="true"></div>
+<div id="float-msg-layer" aria-hidden="true"></div>
+<div id="confetti-layer" aria-hidden="true"></div>
+<div id="toast" role="status"></div>
+
+<!-- <div class="topbar">
+  <button class="icon-btn" id="musicToggle" title="music" aria-label="toggle music">🎵</button>
+</div> -->
+
+<audio id="bgm" loop preload="none">
+  <source src="" type="audio/mpeg">
+</audio>
+
+<div class="app">
+
+  <section class="stage active" id="stage-intro">
+    <p class="intro-text fade-in" id="introText">พี่ข้าวปุ้นนนนนน</p>
+    <p class="intro-hint">สงสัยอะะะะะ</p>
+  </section>
+
+  <section class="stage" id="stage-question">
+    <span class="badge">รอมานานละ</span>
+    <h1 class="question-title" id="questionTitle">เป็น<span class="heart-inline">แฟน</span>กันไหม❤️</h1>
+    <p class="question-sub">อย่าปฏิเสธเด็กเลย</p>
+    <div class="btn-row">
+      <button class="btn btn-yes" id="yesBtn">เป็น</button>
+      <button class="btn btn-no" id="noBtn">ไม่</button>
+    </div>
+  </section>
+
+  <section class="stage" id="stage-celebrate">
+    <div class="celebrate-emoji">🩷</div>
+    <h1 class="celebrate-title" id="celebrateTitle"></h1>
+    <p class="celebrate-line" id="celebrateLine"></p>
+    <p class="celebrate-sweet" id="celebrateSweet">รักพี่ที่สุดแล้วๆๆ</p>
+    <button class="btn-more" id="moreBtn">มีอะไรจะบออีก.....</button>
+  </section>
+
+  <div id="extra">
+
+    <div class="section-block" id="block-note">
+      <h2 class="section-label">a little note for kp</h2>
+      <div class="love-note">
+        <p id="loveNoteText">ครบ6เดือนแล้วนะที่คุยกันมาเค้าสัมผัสได้ถึงความรักจากเธอได้ทุกๆวันเลย ไม่ว่าเธอจะยุ่งแค่ไหนเธอก็ยังหาเวลามาให้เสมอ เรามีทั้งช่วงเวลาที่ดีและแย่แต่เธอก็ทำให้เค้ารู้สึกดีได้เสมอ ขอมีเธอไปตลอดเลยนะ</p>
+        <span class="sign" id="loveNoteSign">— เด็กเล็กของเธอ</span>
+      </div>
+    </div>
+
+    <div class="section-block" id="block-photos">
+      <h2 class="section-label">moment โปรด 📸</h2>
+      <div class="polaroids" id="polaroidRow"></div>
+    </div>
+
+    <div class="section-block" id="block-counter">
+      <div class="counter-box">
+        <div class="counter-label">ตั้งแต่ตกหลุมความน่ารักของเธอ</div>
+        <div class="counter-num" id="counterNum">∞</div>
+      </div>
+    </div>
+
+    <footer class="made-with">ทำโดยหมาเด็กของเธอ ;)</footer>
+  </div>
+
+</div>
+<script src="backbone.js"></script>
+</body>
+</html>
